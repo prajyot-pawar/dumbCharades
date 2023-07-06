@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline-2-title {
+    -webkit-text-stroke: 1px #14FF00;
+  }
+  .font-outline-4- {
+    -webkit-text-stroke: 4px black;
+  }
+}
+@layer keyframes {
+     @keyframes scale {
+       50% {
+         -webkit-transform: scale(1.2);
+         -moz-transform: scale(1.2);
+         -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+         transform: scale(1.2);
+       }
+     }
+     
+@keyframes scaleUpfromZero {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+     @keyframes glow {
+          from {
+            text-shadow: 0 0 20px #c5f5c2, 0 0 20px #c6f3c2, 0 0 30px #78f36d;
+             /* 0 0 40px #59fa4a, 0 0 50px #4af83b, 0 0 60px #14FF00; */
+          }
+          to {
+            text-shadow:0 0 20px #ccfac7, 0 0 30px #59fa4a, 0 0 40px #59fa4a, 0 0 50px #59fa4a; 
+            /* 0 0 60px #59fa4a, 0 0 70px #59fa4a; */
+          }
+        }  
+        
+        @keyframes bounce {  
+    55%{
+      transform: scale(1,1.1) translate(0px, -10px); 
+    }    
+   100% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+  }
+        
+        @keyframes moveup{
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-200px);
+          }
+        }
+        
+        @keyframes movedown{
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(200px);
+          }
+        }
+   }
+
+   
+   @font-face {
+  font-family: 'CustomFont';
+     src: url('../src/assets/fonts/Righteous-Regular.ttf') format('ttf'),
+     /* Add more file formats if necessary */
+     /* You can also include font-weight and font-style properties here */
+   }
+   
